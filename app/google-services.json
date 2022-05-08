@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "758203826052",
+    "firebase_url": "https://washer-7bf32-default-rtdb.firebaseio.com",
+    "project_id": "washer-7bf32",
+    "storage_bucket": "washer-7bf32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758203826052:android:3b59b2c960f8fe9e3127d1",
+        "android_client_info": {
+          "package_name": "com.rishabh.washer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758203826052-5thnafpsd1ostnsv59o90ddhv9edb7hj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXbe3gUVTADBxJDnJvMyFDUIhyzqkULL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "758203826052-5thnafpsd1ostnsv59o90ddhv9edb7hj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758203826052:android:9dad4c4ff15520403127d1",
+        "android_client_info": {
+          "package_name": "com.rishabh.washeradmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758203826052-5thnafpsd1ostnsv59o90ddhv9edb7hj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXbe3gUVTADBxJDnJvMyFDUIhyzqkULL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "758203826052-5thnafpsd1ostnsv59o90ddhv9edb7hj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758203826052:android:f2bc0513214b1df93127d1",
+        "android_client_info": {
+          "package_name": "com.vashinger.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758203826052-5thnafpsd1ostnsv59o90ddhv9edb7hj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXbe3gUVTADBxJDnJvMyFDUIhyzqkULL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "758203826052-5thnafpsd1ostnsv59o90ddhv9edb7hj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

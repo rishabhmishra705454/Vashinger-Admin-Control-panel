@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboardFragment"
+        android:title="Dashboard"
+        android:icon="@drawable/icon_dashboard"/>
+
+<!--        android:icon="@drawable/ic_orders"/>-->
+
+    <item
+        android:id="@+id/deliveryBoy"
+        android:title="Delivery Boy"
+        android:icon="@drawable/icon_deliveyboy_new"/>
+
+<!--        android:icon="@drawable/ic_delivery_boy"/>-->
+
+
+    <item
+        android:id="@+id/usersFragment"
+        android:title="@string/userscontral"
+        android:icon="@drawable/icon_users"/>
+
+
+</menu>

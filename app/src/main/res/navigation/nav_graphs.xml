@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graphs"
+    app:startDestination="@id/dashboardFragment">
+    <fragment
+        android:id="@+id/ordersFragment2"
+        android:name="com.vashinger.admin.OrdersFragment"
+        android:label="fragment_orders"
+        tools:layout="@layout/fragment_orders" >
+        <action
+            android:id="@+id/action_ordersFragment2_to_orderDetailFragment"
+            app:destination="@id/orderDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deliveryBoy"
+        android:name="com.vashinger.admin.deliveryBoy"
+        android:label="fragment_delivery_boy"
+        tools:layout="@layout/fragment_delivery_boy" >
+        <action
+            android:id="@+id/action_deliveryBoy_to_addDeliveryBoyFragment"
+            app:destination="@id/addDeliveryBoyFragment" />
+        <action
+            android:id="@+id/action_deliveryBoy_to_deliveryBoyOrdersFragment"
+            app:destination="@id/deliveryBoyOrdersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/laundries"
+        android:name="com.vashinger.admin.Laundries"
+        android:label="fragment_laundries"
+        tools:layout="@layout/fragment_laundries" />
+    <fragment
+        android:id="@+id/orderDetailFragment"
+        android:name="com.vashinger.admin.OrderDetailFragment"
+        android:label="fragment_order_detail"
+        tools:layout="@layout/fragment_order_detail" />
+    <fragment
+        android:id="@+id/addDeliveryBoyFragment"
+        android:name="com.vashinger.admin.AddDeliveryBoyFragment"
+        android:label="fragment_add_delivery_boy"
+        tools:layout="@layout/fragment_add_delivery_boy" />
+    <fragment
+        android:id="@+id/deliveryBoyOrdersFragment"
+        android:name="com.vashinger.admin.DeliveryBoyOrdersFragment"
+        android:label="fragment_delivery_boy_orders"
+        tools:layout="@layout/fragment_delivery_boy_orders" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.vashinger.admin.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/promoCodeListFragment"
+        android:name="com.vashinger.admin.PromoCodeListFragment"
+        android:label="fragment_promo_code_list"
+        tools:layout="@layout/fragment_promo_code_list" >
+        <action
+            android:id="@+id/action_promoCodeListFragment_to_addPromoCodeFragment"
+            app:destination="@id/addPromoCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPromoCodeFragment"
+        android:name="com.vashinger.admin.AddPromoCodeFragment"
+        android:label="fragment_add_promo_code"
+        tools:layout="@layout/fragment_add_promo_code" />
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.vashinger.admin.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.vashinger.admin.UsersFragment"
+        android:label="fragment_users"
+        tools:layout="@layout/fragment_users" >
+        <action
+            android:id="@+id/action_usersFragment_to_dryCleaningControlFragment"
+            app:destination="@id/dryCleaningControlFragment" />
+        <action
+            android:id="@+id/action_usersFragment_to_ironControlFragment"
+            app:destination="@id/ironControlFragment" />
+        <action
+            android:id="@+id/action_usersFragment_to_washingPreferenceControlFragment"
+            app:destination="@id/washingPreferenceControlFragment" />
+        <action
+            android:id="@+id/action_usersFragment_to_offersFragment"
+            app:destination="@id/offersFragment" />
+        <action
+            android:id="@+id/action_usersFragment_to_expressDeliveryFragment"
+            app:destination="@id/expressDeliveryFragment" />
+        <action
+            android:id="@+id/action_usersFragment_to_washAndFoldFragment"
+            app:destination="@id/washAndFoldFragment" />
+        <action
+            android:id="@+id/action_usersFragment_to_washAndIronFragment"
+            app:destination="@id/washAndIronFragment" />
+        <action
+            android:id="@+id/action_usersFragment_to_schedulePreferenceFragment"
+            app:destination="@id/schedulePreferenceFragment" />
+        <action
+            android:id="@+id/action_usersFragment_to_schedulePreferenceFragment2"
+            app:destination="@id/schedulePreferenceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dryCleaningControlFragment"
+        android:name="com.vashinger.admin.appContral.DryCleaningControlFragment"
+        android:label="fragment_dry_cleaning_control"
+        tools:layout="@layout/fragment_dry_cleaning_control" />
+    <fragment
+        android:id="@+id/ironControlFragment"
+        android:name="com.vashinger.admin.appContral.IronControlFragment"
+        android:label="fragment_iron_control"
+        tools:layout="@layout/fragment_iron_control" />
+    <fragment
+        android:id="@+id/washingPreferenceControlFragment"
+        android:name="com.vashinger.admin.appContral.washingPreferenceControlFragment"
+        android:label="fragment_washing_preference_control"
+        tools:layout="@layout/fragment_washing_preference_control" />
+    <fragment
+        android:id="@+id/offersFragment"
+        android:name="com.vashinger.admin.appContral.OffersFragment"
+        android:label="fragment_offers"
+        tools:layout="@layout/fragment_offers" >
+        <action
+            android:id="@+id/action_offersFragment_to_promoCodeListFragment"
+            app:destination="@id/promoCodeListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/expressDeliveryFragment"
+        android:name="com.vashinger.admin.appContral.ExpressDeliveryFragment"
+        android:label="fragment_express_delivery"
+        tools:layout="@layout/fragment_express_delivery" />
+    <fragment
+        android:id="@+id/washAndFoldFragment"
+        android:name="com.vashinger.admin.appContral.WashAndFoldFragment"
+        android:label="fragment_wash_and_fold"
+        tools:layout="@layout/fragment_wash_and_fold" />
+    <fragment
+        android:id="@+id/washAndIronFragment"
+        android:name="com.vashinger.admin.appContral.WashAndIronFragment"
+        android:label="fragment_wash_and_iron"
+        tools:layout="@layout/fragment_wash_and_iron" />
+    <fragment
+        android:id="@+id/schedulePreferenceFragment"
+        android:name="com.vashinger.admin.appContral.SchedulePreferenceFragment"
+        android:label="fragment_schedule_preference"
+        tools:layout="@layout/fragment_schedule_preference" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.vashinger.admin.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+</navigation>
