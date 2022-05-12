@@ -52,7 +52,8 @@ public class AddDeliveryBoyFragment extends Fragment {
                 String deliveryBoyCode = binding.deliveryBoyCode.getText().toString().trim();
                 String deliveryBoyName = binding.deliveryBoyCodeName.getText().toString();
                 String deliveryBoyNumber = binding.deliveryBoyNumber.getText().toString().trim();
-                AddDeliveryBoyModal deliveryBoyModal = new AddDeliveryBoyModal(deliveryBoyCode,deliveryBoyName,deliveryBoyNumber);
+                String deliveryBoyStatus = binding.deliveryBoyStatus.getText().toString().trim();
+                AddDeliveryBoyModal deliveryBoyModal = new AddDeliveryBoyModal(deliveryBoyCode,deliveryBoyName,deliveryBoyNumber, deliveryBoyStatus);
 
                 myRef.child(deliveryBoyCode).setValue(deliveryBoyModal);
 
@@ -64,6 +65,12 @@ public class AddDeliveryBoyFragment extends Fragment {
             }
         });
 
+        binding.back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).popBackStack();
+            }
+        });
 
         return view;
     }

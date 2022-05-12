@@ -13,6 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -175,6 +177,8 @@ public class washingPreferenceControlFragment extends Fragment {
 
             }
         });
+
+
         binding.userSoftnerEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -208,6 +212,8 @@ public class washingPreferenceControlFragment extends Fragment {
         binding.saveBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                progressDialog.show();
 
                 boolean isColorPreference, isWashingTemp, isDryHeater, isScentedDetergent, isUseSoftner, isAdditionalNote;
 
@@ -272,7 +278,12 @@ public class washingPreferenceControlFragment extends Fragment {
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
                 DatabaseReference myRef = database.getReference("settings");
 
-                myRef.child("washingPreferenceSetting").updateChildren(hashMap);
+                myRef.child("washingPreferenceSetting").updateChildren(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        progressDialog.dismiss();
+                    }
+                });
 
             }
         });

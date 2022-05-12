@@ -2,15 +2,16 @@ package com.vashinger.admin.modal;
 
 public class AddDeliveryBoyModal {
 
-    String deliveryBoyCode, deliveryBoyName , deliveryBoyNumber;
+    String deliveryBoyCode, deliveryBoyName , deliveryBoyNumber, deliveryBoyStatus;
 
-    public AddDeliveryBoyModal() {
-    }
-
-    public AddDeliveryBoyModal(String deliveryBoyCode, String deliveryBoyName, String deliveryBoyNumber) {
+    public AddDeliveryBoyModal(String deliveryBoyCode, String deliveryBoyName, String deliveryBoyNumber, String deliveryBoyStatus) {
         this.deliveryBoyCode = deliveryBoyCode;
         this.deliveryBoyName = deliveryBoyName;
         this.deliveryBoyNumber = deliveryBoyNumber;
+        this.deliveryBoyStatus = deliveryBoyStatus;
+    }
+
+    public AddDeliveryBoyModal() {
     }
 
     public String getDeliveryBoyCode() {
@@ -35,5 +36,13 @@ public class AddDeliveryBoyModal {
 
     public void setDeliveryBoyNumber(String deliveryBoyNumber) {
         this.deliveryBoyNumber = deliveryBoyNumber;
+    }
+
+    public String getDeliveryBoyStatus() {
+        return deliveryBoyStatus;
+    }
+
+    public void setDeliveryBoyStatus(String deliveryBoyStatus) {
+        this.deliveryBoyStatus = deliveryBoyStatus;
     }
 }

@@ -45,36 +45,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                app:cardCornerRadius="12dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/rubik_bold"
-                        android:text="Packaging Option"
-                        android:textColor="@color/purple" />
-
-                    <Switch
-                        android:id="@+id/packagingOptionBtn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        tools:ignore="UseSwitchCompatOrMaterialXml" />
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -97,28 +70,79 @@
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/rubik_medium"
-                        android:text="Per Bag Price"
+                        android:text="Bundle Packaging Price"
                         android:textColor="@color/purple"
                         android:textStyle="bold"
                         tools:ignore="Suspicious0dp" />
 
 
                     <TextView
-                        android:id="@+id/perBagPrice"
+                        android:id="@+id/perBagBundlePrice"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:layout_toStartOf="@+id/perBagPriceEdit"
                         android:fontFamily="@font/rubik_bold"
-                        android:text="100"
+
                         android:textSize="16sp" />
 
                     <ImageView
-                        android:id="@+id/perBagPriceEdit"
+                        android:id="@+id/perBagBundlePriceEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="5dp"
+                        android:src="@drawable/icon_edit"
+                        app:tint="@color/purple_light" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+
+
+
+                    <TextView
+                        android:id="@+id/itemTitle5"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/rubik_medium"
+                        android:text="Multi Packaging Price"
+                        android:textColor="@color/purple"
+                        android:textStyle="bold"
+                        tools:ignore="Suspicious0dp" />
+
+
+                    <TextView
+                        android:id="@+id/multiBagPrice"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/perBagPriceEdit"
+                        android:fontFamily="@font/rubik_bold"
+
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/multiBagPriceEdit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/icon_edit"
+                        android:padding="5dp"
                         app:tint="@color/purple_light" />
 
                 </LinearLayout>
@@ -137,8 +161,6 @@
                     android:padding="16dp">
 
                     <TextView
-
-                        android:layout_gravity="center_vertical"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/rubik_bold"
@@ -146,7 +168,7 @@
                         android:textColor="@color/purple" />
 
                     <Switch
-                        android:id="@+id/mSubscriptionPlanBtn"
+                        android:id="@+id/subscriptionPlanBtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true" />
@@ -164,6 +186,7 @@
                 android:text="Save Changes" />
 
         </LinearLayout>
+
     </ScrollView>
 
 

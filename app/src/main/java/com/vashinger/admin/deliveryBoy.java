@@ -77,6 +77,13 @@ public class deliveryBoy extends Fragment {
             }
         });
 
+        binding.backId.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigation.findNavController(view).popBackStack();
+            }
+        });
+
         return view;
     }
 

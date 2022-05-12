@@ -42,6 +42,7 @@ public class DeliveryBoyAdapter extends RecyclerView.Adapter<DeliveryBoyAdapter.
         holder.deliveryBoyId.setText(deliveryBoyModal.getDeliveryBoyCode());
         holder.deliveryBoyName.setText(deliveryBoyModal.getDeliveryBoyName());
         holder.deliveryBoyNmber.setText(deliveryBoyModal.getDeliveryBoyNumber());
+        holder.deliveryBoyStatus.setText(deliveryBoyModal.getDeliveryBoyStatus());
 
 
 
@@ -53,6 +54,7 @@ public class DeliveryBoyAdapter extends RecyclerView.Adapter<DeliveryBoyAdapter.
                 bundle.putString("deliveryBoyId" ,deliveryBoyModal.getDeliveryBoyCode());
                 bundle.putString("deliveryBoyName" , deliveryBoyModal.getDeliveryBoyName());
                 bundle.putString("deliveryBoyNmber" ,deliveryBoyModal.getDeliveryBoyNumber());
+                bundle.putString("deliveryBoyStatus" ,deliveryBoyModal.getDeliveryBoyStatus());
                 Navigation.findNavController(view).navigate(R.id.action_deliveryBoy_to_deliveryBoyOrdersFragment , bundle);
             }
         });
@@ -66,7 +68,7 @@ public class DeliveryBoyAdapter extends RecyclerView.Adapter<DeliveryBoyAdapter.
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        TextView deliveryBoyId, deliveryBoyName , deliveryBoyNmber;
+        TextView deliveryBoyId, deliveryBoyName , deliveryBoyNmber, deliveryBoyStatus;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -74,6 +76,7 @@ public class DeliveryBoyAdapter extends RecyclerView.Adapter<DeliveryBoyAdapter.
             deliveryBoyId = itemView.findViewById(R.id.deliveryBoyCode);
             deliveryBoyName = itemView.findViewById(R.id.deliveryBoyName);
             deliveryBoyNmber = itemView.findViewById(R.id.deliveryBoyNumber);
+            deliveryBoyStatus = itemView.findViewById(R.id.deliveryBoyStatus);
         }
     }
 }

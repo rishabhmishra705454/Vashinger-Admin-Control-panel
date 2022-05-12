@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".deliveryBoy">
 
 
@@ -11,6 +12,25 @@
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:background="@color/green">
+
+        <ImageView
+            android:id="@+id/backId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toRightOf="@id/backId"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Delivery Boy"
+            android:textColor="@color/white" />
 
         <ImageView
             android:id="@+id/add"
@@ -22,7 +42,7 @@
             android:background="@color/white"
             android:backgroundTint="@color/white"
             android:padding="5dp"
-            android:src="@drawable/ic_add" />
+            android:src="@drawable/ic_person_add" />
 
     </RelativeLayout>
 
